@@ -7,11 +7,11 @@ import json, urllib, urllib.request, hashlib, base64, urllib.parse
 APP_id = "1266271"
 APP_key = "7526a46e-3a2a-4f5b-8659-d72f361e3386"
 
+
 def encrypt(origin_data, appkey):
     "数据内容签名：把(请求内容(未编码)+AppKey)进行MD5加密，然后Base64编码"
     m = hashlib.md5()
     m.update((origin_data+appkey).encode("utf8"))
-
     encodestr = m.hexdigest()
     base64_text = base64.b64encode(encodestr.encode(encoding='utf-8'))
     return base64_text
@@ -60,8 +60,8 @@ def recognise(expresscode):
     if not any(data['Shippers']):
         print("未查到该快递信息,请检查快递单号是否有误！")
     else :
-        print("已查到该", str(data['Shippers'][0]['ShipperName'])+"("+str(data['Shippers'][0]['ShipperCode'])+")",
-              expresscode)
+        print("已查到该", str(data['Shippers'][0]['ShipperName'])+"("+
+              str(data['Shippers'][0]['ShipperCode'])+")", expresscode)
         trace_data = get_traces(expresscode, data['Shippers'][0]['ShipperCode'], APP_id, APP_key, url)
         if trace_data['Success'] == "false" or not any(trace_data['Traces']):
             print("未查询到该快递物流轨迹！")
