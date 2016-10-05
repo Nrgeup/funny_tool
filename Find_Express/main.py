@@ -81,7 +81,8 @@ def recognise(expresscode):
     return
 
 while True:
-    code = input("请输入快递单号(输入esc退出)：")
+    code = input("请输入快递单号(Esc退出)：")
     if code == "esc":
         break
     recognise(code)
+
