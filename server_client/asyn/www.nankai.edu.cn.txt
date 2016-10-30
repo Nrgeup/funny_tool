@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>域名输入有误</title>
+<style type="text/css">
+<!--
+.STYLE2 {
+position:absolute;
+top:25%;
+left:0;
+width:100%;
+text-align:center;
+color: #701a5b;
+font-family:微软雅黑;
+font-size:32px;
+line-height:60px;
+/*border:1px #FF0000 solid;*/
+}
+body {
+	background-image: url(bg.gif);
+}
+
+-->
+</style>
+</head>
+
+<body style="text-align:center">
+<div class="STYLE2">
+	<b>系统提示：您输入的域名有误！</b><br>
+	若您想访问南开大学主页，请输入<a href="http://www.nankai.edu.cn" style="color: #701a5b;">http://www.nankai.edu.cn</a></div>
+</body>
+</html>

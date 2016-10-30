@@ -1,0 +1,19 @@
+HTTP/1.1 500 Domain Not Found
+Server: Varnish
+Retry-After: 0
+content-type: text/html
+Cache-Control: private, no-cache
+connection: keep-alive
+Content-Length: 179
+Accept-Ranges: bytes
+Date: Sun, 30 Oct 2016 09:44:40 GMT
+Via: 1.1 varnish
+Connection: close
+
+
+<html>
+<head>
+<title>Fastly error: unknown domain </title>
+</head>
+<body>
+Fastly error: unknown domain: . Please check that this domain has been added to a service.</body></html>

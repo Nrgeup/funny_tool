@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Sun, 30 Oct 2016 09:53:34 GMT
+Content-Type: text/html
+Content-Length: 136
+Last-Modified: Fri, 07 Oct 2016 03:31:33 GMT
+Connection: close
+ETag: "57f71715-88"
+Accept-Ranges: bytes
+
+<meta name="baidu-site-verification" content="e9sE6CqmGs" />
+<script language="javascript">
+    document.location = "./blog/";
+</script>
