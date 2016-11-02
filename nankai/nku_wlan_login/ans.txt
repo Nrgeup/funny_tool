@@ -1,0 +1,554 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>信息返回</title>
+
+<!--Dr.COMWebLoginID_2.htm-->
+
+
+
+<script language="javascript" type="text/javascript" src="a41.js"></script>
+
+
+
+<script language="javascript">	
+
+Msg=01;time='1234567890';flow='1234567890';fsele=0;fee='1234567890';xsele=0;xip='000.000.000.000.';mac='00-00-00-00-00-00';va=00;vb=00;vc=00;vd=0000;ve=0000;vf=0000;
+
+ipm="ca71126a";ss1="000d482ad37c";ss2="0000";ss3="0a8883b6";ss4="000000000000";msga='';/* can not modify !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+pp="<p></p>";
+
+flow0=flow%1024;flow1=flow-flow0;flow0=flow0*1000;flow0=flow0-flow0%1024;fee1=fee-fee%100;
+
+flow3='.';
+
+if(flow0/1024<10)flow3='.00';
+
+else{if(flow0/1024<100)flow3='.0';}
+
+
+
+UT="本账号已使用时间 Used time : "+time +" 分钟"+pp;
+
+UF="本账号已使用流量 Used flux : "+flow1/1024+flow3+flow0/1024+" MByte"+pp;
+
+if(fsele==1){UM="本账号余额  Balance : "+fee1/10000+" 元";}else{UM='';}
+
+//UM="";
+
+
+
+function checkphone(){
+
+	
+
+	if((navigator.userAgent.indexOf('iPad') > 0) || (navigator.userAgent.indexOf('Windows NT') > 0))return;
+
+	if((navigator.userAgent.indexOf('Mobile') > 0) ){}
+
+	else return;
+
+	PostForm.RET.value=32;
+
+	PostForm.INFO.value="Msg="+Msg+";time="+time+";flow="+flow+";fsele="+fsele+";fee="+fee+";xsele="+xsele+";va="+va+";vb="+vb+";vc="+vc+";vd="+vd+";ve="+ve+";vf="+vf
+
+	+";xip='"+xip+"';mac='"+mac	+"';ipm='"+ipm+"';ss1='"+ss1+"';ss2='"+ss2+"';ss3='"+ss3+"';ss4='"+ss4+"';msga='"+msga+"';";
+
+	document.PostForm.submit();
+
+}
+
+function ac_forward(){
+
+	if(getQueryString('wlanacip') == null || getQueryString('wlanacip') == ''){
+
+//		location='/                           ';
+
+		location='http://1.1.1.1';
+
+	}
+
+	else{
+
+		location="http://" + getQueryString('wlanacip');
+
+	}
+
+}
+
+
+
+
+
+function selfService()
+
+{
+
+	var selflink='http://netservice.nankai.edu.cn';
+
+	window.location=selflink;
+
+}
+
+
+
+
+
+function updateFlow(){
+
+setTimeout(getFlowBalance,3000);
+
+}
+
+
+
+
+
+function flushnow(){
+
+	var lks=window.location.href;
+
+	if(lks.indexOf(syb)<0){
+
+		var nlk=lks+'&tyms=1';
+
+		window.location.href = nlk;
+
+	}
+
+}
+
+
+
+function flushBow(){
+
+setTimeout(flushnow,5000);
+
+}
+
+
+
+</script>
+
+
+
+</head>
+
+<body onselectstart="return false" onLoad="checkphone()">
+
+<style><!--
+
+a {text-decoration: none;}
+
+body {margin:0; padding:0; text-align:center; background-color:#f5f5f5;}
+
+.font1 {font-family:微软雅黑; font-size: 14px; line-height: 24px; color:#5F6468;}
+
+.input-border{font-family:微软雅黑;border:1px solid #b8b8b8; width:288px; height:34px; line-height:34px; font-size:16px;}
+
+.con {
+	width:1000px;
+	height:650px;
+	margin-right:auto;
+	margin-left:auto;
+	position:absolute;
+	top:50%;left:50%;
+	margin:-325px 0 0 -500px;
+}
+.main {
+	background-image: url('a01.jpg');
+	background-repeat: no-repeat;
+	float: left;
+	width: 1000px;
+	height:650px;
+}
+.main .logo {
+	float:left;
+	margin:50px 80px;
+}
+.main .bg {
+	background-image: url('a04.jpg');
+	width:940px;
+	height:428px;
+	margin:0px 28px;
+	float: left;
+}
+.main .bg .welcome {
+	float: left;
+	height:50px;
+	width:600px;
+	margin:30px 40px;
+}
+.main .bg .login {
+	float: left;
+	height:210px;
+	width:450px;
+	margin:10px 40px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	line-height: 24px;
+	color:#5F6468;
+}
+.main .foot {
+	float:left;
+	height:25px;
+	width:1000px;
+	font-family:微软雅黑;
+	font-size: 12px;
+	line-height: 16px;
+	color:#5F6468;
+	margin:18px 0px;
+}
+
+.btn {
+	BORDER: 1px #EE0000 solid;
+	height:38px;
+	width:130px;
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+	background:#EE0000;
+	color:#fff;
+	cursor:hand;
+	border-radius: 10px;
+}
+
+.btnself {
+	BORDER: 1px #EE0000 solid;
+	height:38px;
+	width:150px;
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+	background:#EE0000;
+	color:#fff;
+	cursor:hand;
+	border-radius: 10px;
+}
+
+.sepd{padding-left:20px;}
+
+-->
+
+</style>
+
+<div class="con">
+
+<div class="main">
+
+<div class="logo"><img border="0" src="a02.jpg"></div>
+
+<div class="bg">
+
+<div class="welcome" id="welcome" style="width:90%;height:90px;">
+<!--
+<a style="float:left;" href="http://192.168.18.15/nankai/benbuwifi.html" target="_blank"><font color="red">关于本部无线网络断网升级的通知</font></a><br>
+<a style="float:left;" href="http://192.168.18.15/nankai/jinnan-gejie.doc" target="_blank"><font color="red">关于津南校区核心及理科组团网络割接的重要通知</font></a><br>
+<a style="float:left;" href="http://youku.iv6.cc" target="_blank"><font color="red">校园优酷（IPv6下流量免费）</font></a><br>
+<a style="float:left;" href="http://192.168.18.15/nankai/netservice.html" target="_blank"><font color="red">八里台/津南校区网络服务电话</font></a><br>
+<a style="float:left;" href="http://192.168.18.15/nankai/jiashu-20151127.doc" target="_blank"><font color="red">关于家属区网络退费的通知（2015-11-27）</font></a><br>
+<a style="float:left;margin-left:350px;" href="http://xxb.nankai.edu.cn/tzgg1/list.htm" target="_blank">更多通知</a>
+-->
+</div>
+
+<div class="login">
+
+<form name="f1" method="post" action="">
+
+<table border="0" width="100%" cellspacing="1" cellpadding="0" class="font1">
+
+	<tr>
+
+		<td height="150" width="99%" align="center" id="message"></td>
+
+	</tr>
+
+	<tr>
+
+		<td height="60" width="99%">
+
+		<p align="center">
+
+		<span><input type="button" onClick="location='http://202.113.18.106/a70.htm'" name="ac_forward" value="返 回 (Go back)" class="btn"></span>
+
+		<span class="sepd"><input type="button" onClick="javascript:selfService()" name="" value="自助服务(Self-service)" class="btnself"></span>
+
+		</td>
+
+	</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="foot">本宽带接入系统由城市热点提供.</div>
+
+</div>
+
+</div>
+
+</body>
+
+<FORM NAME="PostForm" action="/" method=post>
+
+<INPUT TYPE="hidden" NAME="RET" value=""  >
+
+<INPUT TYPE="hidden" NAME="INFO" value=""  >
+
+<INPUT TYPE="hidden" NAME="INFO1" value=""  >
+
+</FORM>
+
+</html>
+
+<script>
+
+function DispTFM(){
+
+	accoutStatus();
+
+	//alert("Msg:"+Msg+"|"+"msga:"+msga);
+
+	document.getElementById("message").innerHTML="";
+
+
+
+	if(Msg==0 || Msg==1){
+
+		if(msga == null || msga == ''){
+
+		
+
+			/*
+
+			if(enPortal==1){
+
+				document.getElementById("message").innerHTML="AC认证失败<br>AC authentication failure";
+
+			}
+
+			else{
+
+				document.getElementById("message").innerHTML="帐号或密码不对，请重新输入<br>Ivalid account or password, please login again";
+
+			}
+
+			*/
+
+			
+
+			if(pwdrg){
+
+				document.getElementById("message").innerHTML="帐号或密码不对，请重新输入<br>Ivalid account or password, please login again";
+
+			}else if(hardstop){
+
+				document.getElementById("message").innerHTML="您的账号已停机，造成停机的可能原因："+pp+"1、余额不足月租"+pp+"2、用户报停"+pp+"需要了解具体原因，请访问<a href='http://netservice.nankai.edu.cn'>自助服务系统</a>。";
+
+			}else if(NoMoney){
+
+				document.getElementById("message").innerHTML="账号余额不足<br>Account balance is insufficient";
+
+			}else{
+
+				document.getElementById("message").innerHTML="帐号或密码不对，请重新输入<br>Ivalid account or password, please login again";
+
+			}
+
+					
+
+		}
+
+		else if(msga=='error0'){
+
+			document.getElementById("message").innerHTML="本IP不允许Web方式登录<br>The IP does not allow Web-log";
+
+		}
+
+		else if(msga=='error1'){
+
+			document.getElementById("message").innerHTML="本账号不允许Web方式登录<br>The account does not allow Web-log";
+
+		}
+
+		else if(msga=='error2'){
+
+			document.getElementById("message").innerHTML="本账号不允许修改密码<br>This account does not allow change password";
+
+		}
+
+		else if(enPortal==1){
+
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UM;
+
+		}
+
+		else{
+
+			document.getElementById("message").innerHTML=msga;			
+
+		}
+
+	}
+
+	else if(Msg==2){
+
+		document.getElementById("message").innerHTML="该账号正在使用中，请您与网管联系<br>This account is tie up, please contact network adminstration"+pp+xip+pp+mac;
+
+	}
+
+	else if(Msg==3){
+
+		document.getElementById("message").innerHTML="本账号只能在指定地址使用<br>This account can be used on the appointed address only."+pp+xip;
+
+	}
+
+	else if(Msg==4){
+
+		document.getElementById("message").innerHTML="账号余额不足<br>Account balance is insufficient";
+
+	}
+
+	else if(Msg==5){
+
+		document.getElementById("message").innerHTML="您的账号已停机，造成停机的可能原因："+pp+"1、余额不足月租"+pp+"2、用户报停"+pp+"需要了解具体原因，请访问<a href='http://netservice.nankai.edu.cn'>自助服务系统</a>。";
+
+	}
+
+	else if(Msg==6){
+
+		document.getElementById("message").innerHTML="系统缓存太满<br>System buffer full";
+
+	}
+
+	else if(Msg==7){
+
+		if(enPortal==1){
+
+			document.getElementById("message").innerHTML=UM;
+
+		}
+
+		else{
+
+			document.getElementById("message").innerHTML=UT+UF+UM;
+
+		}
+
+	}
+
+	else if(Msg==8){
+
+		document.getElementById("message").innerHTML="本账号正在使用,不能修改<br>This account is in use. Unable to change";
+
+	}
+
+	else if(Msg==9){
+
+		document.getElementById("message").innerHTML="新密码与确认新密码不匹配,不能修改<br>New password and confirmation do not match. Unable to change";
+
+
+
+	}
+
+	else if(Msg==10){
+
+		document.getElementById("message").innerHTML="密码修改成功<br>Password Changed Successfully";
+
+
+
+	}
+
+	else if(Msg==11){
+
+		document.getElementById("message").innerHTML="本账号只能在指定地址使用<br>This account can be used on the appointed address only :"+pp+mac;
+
+	}
+
+	else if(Msg==14){
+
+		if(enPortal==1){
+
+			
+
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UM;
+
+		}
+
+		else{
+
+			document.getElementById("message").innerHTML="注销成功 Logout successfully"+pp+UT+UF+UM;
+
+		}
+
+	}
+
+	else if(Msg==15){
+
+		if(enPortal==1){
+
+			document.getElementById("message").innerHTML="登录成功 Login successfully"+pp+UM;
+
+		}
+
+		else{
+
+			document.getElementById("message").innerHTML="登录成功 Login successfully"+pp+UT+UF+UM;
+
+		}
+
+	}
+
+
+
+}
+
+if(getQueryString('ACLogOut')=='1'){
+
+	
+
+	flushBow();
+
+	for(var i=0;i<10;i++){
+
+		updateFlow();
+
+		if(noinfoerr>2){
+
+			thisHREF = document.location.href;
+
+			window.location.href = thisHREF;
+
+		}
+
+	}
+
+	
+
+	document.getElementById("message").innerHTML="注销成功 Logout successfully"+hc+"正在获取时长、流量、余额的信息...";
+
+
+
+}
+
+else if(getQueryString('ACLogOut')=='2'){
+
+	document.getElementById("message").innerHTML="此IP禁止登陆 IP is not allowed";
+
+}
+
+else{
+
+	DispTFM();
+
+}
+
+//显示通知信息
+showWelcomeMsg();
+</script>
